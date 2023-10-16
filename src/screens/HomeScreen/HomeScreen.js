@@ -31,6 +31,7 @@ const HomeScreen = () => {
   const [locations, setLocations] = useState([]);
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(false);
+  const [searchValue, setSearchValue] = useState('');
 
   const handleLocation = loc => {
     storeData('city', loc.name);
@@ -40,10 +41,12 @@ const HomeScreen = () => {
   };
 
   const handleSearch = value => {
-    if (value.length > 2)
+    setSearchValue(value);
+    if (value.length > 2) {
       fetchLocations({cityName: value}).then(data => {
         setLocations(data);
       });
+    }
   };
 
   useEffect(() => {
@@ -253,25 +256,26 @@ const styles = StyleSheet.create({
   textInputView: {
     borderRadius: rh(1),
     borderColor: '#fff',
-    padding: rh(1.1),
-    width: rw(90),
+    padding: rh(1),
+    width: rw(95),
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    margin: rh(2),
-    zIndex: 1,
+    marginTop: rh(1.5),
+    marginHorizontal: rw(2),
   },
 
   locationsSearchView: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'rgba(255, 255, 255,0.8)',
     borderRadius: 20,
-    width: 'auto',
+    width: '95%',
     padding: rh(0.2),
-    margin: rh(2),
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 2,
-    overflow: 'hidden',
+    position: 'absolute',
+    top: rh(9.3),
+    marginHorizontal: rh(1.5),
   },
 
   textInput: {
