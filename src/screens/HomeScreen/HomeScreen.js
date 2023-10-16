@@ -153,7 +153,12 @@ const HomeScreen = () => {
             </View>
             <View style={styles.forecastImageView}>
               <Image
-                source={ImagePath[current?.condition?.text]}
+                source={
+                  ImagePath[
+                    current?.condition?.text ||
+                      require('../../assets/images/sun.png')
+                  ]
+                }
                 style={styles.forecastImage}
               />
             </View>
@@ -344,7 +349,7 @@ const styles = StyleSheet.create({
   degree_celciusView: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: rh(2.5),
+    marginTop: rh(3),
   },
   degree_celciusText: {
     fontSize: rf(3),
@@ -361,7 +366,7 @@ const styles = StyleSheet.create({
   extraContentView: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    marginTop: rh(2.5),
+    marginTop: rh(3),
   },
   extraContent: {
     flexDirection: 'row',
