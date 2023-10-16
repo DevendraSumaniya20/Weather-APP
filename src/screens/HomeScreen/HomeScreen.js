@@ -75,21 +75,21 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      {loading ? (
-        <View style={styles.progressContainer}>
-          <Progress.Circle
-            size={150}
-            indeterminate={true}
-            thickness={10}
-            color="#258"
-          />
-        </View>
-      ) : (
-        <SafeAreaView style={styles.container}>
-          <ImageBackground
-            blurRadius={70}
-            style={styles.imageBackground}
-            source={require('../../assets/images/bg.png')}>
+      <ImageBackground
+        blurRadius={70}
+        style={styles.imageBackground}
+        source={require('../../assets/images/bg.png')}>
+        {loading ? (
+          <View style={styles.progressContainer}>
+            <Progress.Bar
+              size={150}
+              indeterminate={true}
+              thickness={10}
+              color="#255685"
+            />
+          </View>
+        ) : (
+          <SafeAreaView style={styles.container}>
             <View
               style={[
                 styles.textInputView,
@@ -103,7 +103,7 @@ const HomeScreen = () => {
                 <TextInput
                   onChangeText={handleTextDebounce}
                   placeholder="Search City"
-                  placeholderTextColor={'lightgray'}
+                  placeholderTextColor="lightgray"
                   style={styles.textInput}
                 />
               ) : null}
@@ -113,9 +113,10 @@ const HomeScreen = () => {
                 onPress={() => {
                   toggleSearch(!showSearch);
                 }}>
-                <MagnifyingGlassIcon color={'#fff'} size={25} />
+                <MagnifyingGlassIcon color="#fff" size={25} />
               </TouchableOpacity>
             </View>
+
             {locations.length > 0 && showSearch ? (
               <View style={styles.locationsSearchView}>
                 {locations.map((loc, index) => {
@@ -132,7 +133,7 @@ const HomeScreen = () => {
                         handleLocation(loc);
                       }}>
                       <MapPinIcon color={'#000'} size={30} />
-                      <Text style={styles.locationDataText}>
+                      <Text numberOfLines={1} style={styles.locationDataText}>
                         {loc?.name},{loc?.country}
                       </Text>
                     </TouchableOpacity>
@@ -143,8 +144,8 @@ const HomeScreen = () => {
 
             {/* Forecast */}
             <View style={styles.forcastView}>
-              <Text style={styles.locationText}>{'' + location?.name}, </Text>
-              <Text style={styles.countryText}> {location?.country}</Text>
+              <Text style={styles.locationText}>{'' + location?.name} ,</Text>
+              <Text style={styles.countryText}> {location?.country} </Text>
             </View>
             <View style={styles.forecastImageView}>
               <Image
@@ -167,7 +168,7 @@ const HomeScreen = () => {
               <View style={styles.extraContent}>
                 <Image
                   source={require('../../assets/icons/wind.png')}
-                  style={styles.extraContentImage}
+                  style={styles.extraContentImage1}
                 />
                 <Text style={styles.extraContentText}>
                   {current?.wind_kph}km
@@ -176,7 +177,7 @@ const HomeScreen = () => {
               <View style={styles.extraContent}>
                 <Image
                   source={require('../../assets/icons/drop.png')}
-                  style={styles.extraContentImage}
+                  style={styles.extraContentImage2}
                 />
                 <Text style={styles.extraContentText}>
                   {current?.humidity}%
@@ -185,7 +186,7 @@ const HomeScreen = () => {
               <View style={styles.extraContent}>
                 <Image
                   source={require('../../assets/icons/sun.png')}
-                  style={styles.extraContentImage}
+                  style={styles.extraContentImage3}
                 />
                 <Text style={styles.extraContentText}>
                   {weather?.forecast?.forecastday[0]?.astro?.sunrise}
@@ -194,7 +195,7 @@ const HomeScreen = () => {
             </View>
             {/* Forecast for the next days */}
             <View style={styles.forcastforNextdayInnerView}>
-              <View>
+              <View style={styles.forcastViewDailyforecastView}>
                 <CalendarIcon color={'#fff'} size={25} />
                 <Text style={styles.forcastforNextdayInnerText}>
                   Daily forecast
@@ -233,9 +234,9 @@ const HomeScreen = () => {
                   })}
               </ScrollView>
             </View>
-          </ImageBackground>
-        </SafeAreaView>
-      )}
+          </SafeAreaView>
+        )}
+      </ImageBackground>
     </View>
   );
 };
@@ -250,27 +251,27 @@ const styles = StyleSheet.create({
   },
 
   textInputView: {
-    borderRadius: rh(1.2),
-    borderWidth: 1,
+    borderRadius: rh(1),
     borderColor: '#fff',
-    padding: rh(1.5),
+    padding: rh(1.1),
     width: rw(90),
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
     margin: rh(2),
-    zIndex: 50,
+    zIndex: 1,
   },
 
   locationsSearchView: {
-    backgroundColor: '#fff',
+    backgroundColor: '#ffff',
     borderRadius: 20,
-    width: rw(90),
-    padding: rh(1),
-    alignSelf: 'center',
-    margin: rh(1),
+    width: 'auto',
+    padding: rh(0.2),
+    margin: rh(2),
     alignItems: 'center',
-    zIndex: 50,
+    justifyContent: 'center',
+    zIndex: 2,
+    overflow: 'hidden',
   },
 
   textInput: {
@@ -278,28 +279,31 @@ const styles = StyleSheet.create({
     fontSize: rf(2),
   },
   touchableOpacityView: {
-    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
 
   showLocationTouchable: {
     margin: rh(1),
-    borderBottomWidth: 0.3,
-    borderColor: '#000',
+    width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
+    textAlign: 'center',
     gap: 15,
+    textTransform: 'capitalize',
+    overflow: 'hidden',
   },
   lastLocationTouchable: {
-    margin: rh(1),
     flexDirection: 'row',
     alignItems: 'center',
     gap: 15,
+    width: '100%',
+    overflow: 'hidden',
   },
   locationDataText: {
     fontSize: rf(2.5),
-    fontWeight: '600',
-    alignItems: 'center',
-    margin: 3,
+    fontWeight: '500',
+    color: '#000',
+    textAlign: 'center',
   },
 
   forcastView: {
@@ -307,41 +311,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: rh(1.5),
-    position: 'absolute',
-    left: '25%',
-    top: '15%',
-  },
-
-  forecastImageView: {
-    alignItems: 'center',
-    position: 'absolute',
-    left: '25%',
-    top: '17%',
-  },
-
-  forecastImage: {
-    width: rw(60),
-    height: rh(25),
   },
   locationText: {
-    fontSize: rf(2),
+    fontSize: rf(2.2),
     fontWeight: '800',
     color: '#fff',
     textAlign: 'center',
   },
   countryText: {
-    fontSize: rf(1.5),
+    fontSize: rf(2.2),
     color: '#fff',
-    fontWeight: '500',
+    fontWeight: '600',
     textAlign: 'center',
   },
+
+  forecastImageView: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 0,
+  },
+
+  forecastImage: {
+    width: rw(55),
+    height: rh(26),
+  },
   degree_celciusView: {
-    position: 'absolute',
-    left: '50%',
-    top: '45%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: rh(2.5),
   },
   degree_celciusText: {
-    fontSize: rf(3.5),
+    fontSize: rf(3),
     color: '#fff',
     textAlign: 'center',
     fontWeight: 'bold',
@@ -349,45 +349,60 @@ const styles = StyleSheet.create({
   degree_celciusTypeText: {
     fontWeight: '600',
     color: '#fff',
-    fontSize: rf(2.1),
+    fontSize: rf(2),
     textAlign: 'center',
   },
   extraContentView: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    position: 'absolute',
-    left: '10%',
-    top: '55%',
+    justifyContent: 'space-evenly',
+    marginTop: rh(2.5),
   },
   extraContent: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
   },
-  extraContentImage: {
-    height: rh(6),
-    width: rw(13),
+  extraContentImage1: {
+    width: rw(12),
+    height: rh(5.4),
+    tintColor: '#fff',
+  },
+
+  extraContentImage2: {
+    width: rw(12),
+    height: rh(5.4),
+    tintColor: 'rgb(12, 148, 239)',
+  },
+  extraContentImage3: {
+    width: rw(12),
+    height: rh(5.4),
+    tintColor: 'rgb(255, 224, 24)',
   },
   extraContentText: {
     color: 'white',
-    fontSize: rf(2),
+    fontSize: rf(2.2),
     fontWeight: '400',
   },
   forcastforNextdayInnerView: {
     alignItems: 'center',
     gap: 5,
-    position: 'absolute',
-    left: '0%',
-    top: '65%',
+    marginTop: rh(5),
   },
+  forcastViewDailyforecastView: {
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'center',
+  },
+
   forcastforNextdayInnerText: {
     color: '#fff',
     fontSize: rf(2.5),
+    fontWeight: 'bold',
   },
 
   dayView: {
-    width: rw(30),
-    height: rh(15),
+    width: rw(38),
+    height: rh(19),
     margin: rh(2),
     backgroundColor: '#AAAA',
     borderRadius: 20,
@@ -395,7 +410,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   dayWeatherIcon: {
-    width: rw(12),
+    width: rw(14),
     height: rh(6),
     marginBottom: 6,
   },
