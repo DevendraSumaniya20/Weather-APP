@@ -102,15 +102,16 @@ const HomeScreen = () => {
                     : 'transparent',
                 },
               ]}>
-              {showSearch ? (
-                <TextInput
-                  onChangeText={handleTextDebounce}
-                  placeholder="Search City"
-                  placeholderTextColor="lightgray"
-                  style={styles.textInput}
-                />
-              ) : null}
-
+              <View>
+                {showSearch ? (
+                  <TextInput
+                    onChangeText={handleTextDebounce}
+                    placeholder="Search City"
+                    placeholderTextColor="lightgray"
+                    style={styles.textInput}
+                  />
+                ) : null}
+              </View>
               <TouchableOpacity
                 style={styles.touchableOpacityView}
                 onPress={() => {
@@ -254,17 +255,16 @@ const styles = StyleSheet.create({
   },
 
   textInputView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     borderRadius: rh(1),
     borderColor: '#fff',
     padding: rh(1),
     width: rw(95),
     alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     marginTop: rh(1.5),
     marginHorizontal: rw(2),
   },
-
   locationsSearchView: {
     backgroundColor: 'rgba(255, 255, 255,0.8)',
     borderRadius: 20,
@@ -284,6 +284,8 @@ const styles = StyleSheet.create({
   },
   touchableOpacityView: {
     alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
 
   showLocationTouchable: {
@@ -367,19 +369,19 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   extraContentImage1: {
-    width: rw(12),
-    height: rh(5.4),
+    width: rw(9),
+    height: rh(4),
     tintColor: '#fff',
   },
 
   extraContentImage2: {
-    width: rw(12),
-    height: rh(5.4),
+    width: rw(8),
+    height: rh(5),
     tintColor: 'rgb(12, 148, 239)',
   },
   extraContentImage3: {
-    width: rw(12),
-    height: rh(5.4),
+    width: rw(10.3),
+    height: rh(5),
     tintColor: 'rgb(255, 224, 24)',
   },
   extraContentText: {
