@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
   textInput: {
     color: 'white',
     fontSize: rf(2),
+    fontFamily: 'LEMONMILK-Regular',
   },
   touchableOpacityView: {
     alignItems: 'center',
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
     gap: 15,
     textTransform: 'capitalize',
     overflow: 'hidden',
+    fontFamily: 'LEMONMILK-MediumItalic',
   },
   lastLocationTouchable: {
     flexDirection: 'row',
@@ -64,12 +66,14 @@ const styles = StyleSheet.create({
     gap: 15,
     width: '100%',
     overflow: 'hidden',
+    fontFamily: 'LEMONMILK-MediumItalic',
   },
   locationDataText: {
     fontSize: rf(2.5),
     fontWeight: '500',
     color: '#000',
     textAlign: 'center',
+    fontFamily: 'LEMONMILK-Regular',
   },
 
   forcastView: {
@@ -80,15 +84,15 @@ const styles = StyleSheet.create({
   },
   locationText: {
     fontSize: rf(2.2),
-    fontWeight: '800',
     color: '#fff',
     textAlign: 'center',
+    fontFamily: 'LEMONMILK-Regular',
   },
   countryText: {
     fontSize: rf(2.2),
     color: '#fff',
-    fontWeight: '600',
     textAlign: 'center',
+    fontFamily: 'LEMONMILK-Light',
   },
 
   forecastImageView: {
@@ -99,8 +103,8 @@ const styles = StyleSheet.create({
 
   forecastImage: {
     width: rw(60),
-    height: rh(25.5),
-    marginTop: rh(1.5),
+    height: rh(26.5),
+    marginTop: rh(2),
     alignSelf: 'center',
   },
   degree_celciusView: {
@@ -113,12 +117,13 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
     fontWeight: 'bold',
+    fontFamily: 'LEMONMILK-Regular',
   },
   degree_celciusTypeText: {
-    fontWeight: '600',
     color: '#fff',
     fontSize: rf(2),
     textAlign: 'center',
+    fontFamily: 'LEMONMILK-Light',
   },
   extraContentView: {
     flexDirection: 'row',
@@ -149,7 +154,8 @@ const styles = StyleSheet.create({
   extraContentText: {
     color: 'white',
     fontSize: rf(2.2),
-    fontWeight: '400',
+
+    fontFamily: 'LEMONMILK-Regular',
   },
   forcastforNextdayInnerView: {
     alignItems: 'center',
@@ -165,7 +171,7 @@ const styles = StyleSheet.create({
   forcastforNextdayInnerText: {
     color: '#fff',
     fontSize: rf(2.5),
-    fontWeight: 'bold',
+    fontFamily: 'LEMONMILK-Regular',
   },
 
   dayView: {
@@ -180,18 +186,18 @@ const styles = StyleSheet.create({
   dayWeatherIcon: {
     width: rw(14),
     height: rh(6),
-    marginBottom: 6,
+    marginBottom: rh(2),
   },
   dayText: {
-    fontSize: rf(2),
-    fontWeight: '600',
+    fontSize: rf(1.5),
     color: '#fff',
     marginBottom: 4,
+    fontFamily: 'LEMONMILK-MediumItalic',
   },
   dayDegreeText: {
     fontSize: rf(2),
-    fontWeight: '500',
     color: '#fff',
+    fontFamily: 'LEMONMILK-MediumItalic',
   },
   progressContainer: {
     flex: 1,
