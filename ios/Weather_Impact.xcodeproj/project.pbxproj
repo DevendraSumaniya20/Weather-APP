@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* Weather_ImpactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Weather_ImpactTests.m */; };
+		0127027E6FD14F41801877EF /* LEMONMILK-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD96E684AD364EAD8998F419 /* LEMONMILK-Light.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		43EE1FB6E0214637A9010C06 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6164106C2004A91A900EC88 /* Roboto-BlackItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B6C429091E31A3A4138F7225 /* libPods-Weather_Impact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DF39CD6723973CDD6FD92 /* libPods-Weather_Impact.a */; };
-		C2661DD20FC59C17A0D8C376 /* libPods-Weather_Impact-Weather_ImpactTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15214DB537D94BEE612AAE30 /* libPods-Weather_Impact-Weather_ImpactTests.a */; };
+		8C066ABE5C8E6E4952DD7AA0 /* libPods-Weather_Impact-Weather_ImpactTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C8EB2F9AA3DA5DE1AA6886 /* libPods-Weather_Impact-Weather_ImpactTests.a */; };
+		8C2FA07B4C4654C2620F2940 /* libPods-Weather_Impact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C24A9E06206C48EB0795A4 /* libPods-Weather_Impact.a */; };
+		9EEF8FF7F27D435891B730A5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE973AA56ADC4B28B3A8EC61 /* Roboto-Light.ttf */; };
+		AF5DDCA3ED5A444BBB29EE31 /* LEMONMILK-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E24B9EDCBCEE45308C2A23E5 /* LEMONMILK-Regular.otf */; };
+		E8701FCC4F33469FA91052D3 /* LEMONMILK-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF71A4F2C479457EA197C0C3 /* LEMONMILK-MediumItalic.otf */; };
+		F908C2F23976492B8BC3C113 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4B60109F9745BE926FD14A /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +42,20 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Weather_Impact/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Weather_Impact/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Weather_Impact/main.m; sourceTree = "<group>"; };
-		15214DB537D94BEE612AAE30 /* libPods-Weather_Impact-Weather_ImpactTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather_Impact-Weather_ImpactTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C8DF39CD6723973CDD6FD92 /* libPods-Weather_Impact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather_Impact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E0097A5EE4D92958CF898F /* Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig"; path = "Target Support Files/Pods-Weather_Impact-Weather_ImpactTests/Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A9BA16F403E76AB88A2EAC7 /* Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig"; path = "Target Support Files/Pods-Weather_Impact-Weather_ImpactTests/Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CF088B708ACF369E5CEC050 /* Pods-Weather_Impact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact.debug.xcconfig"; path = "Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Weather_Impact/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		887A36C1F00FDA1D4D2EBFFD /* Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig"; path = "Target Support Files/Pods-Weather_Impact-Weather_ImpactTests/Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig"; sourceTree = "<group>"; };
-		C147E376CC04CE635B6BF326 /* Pods-Weather_Impact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact.release.xcconfig"; path = "Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact.release.xcconfig"; sourceTree = "<group>"; };
-		CB7A40D7417E22E5768A989F /* Pods-Weather_Impact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact.debug.xcconfig"; path = "Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact.debug.xcconfig"; sourceTree = "<group>"; };
-		D3E9E5CE6DBF4C78B022BD15 /* Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig"; path = "Target Support Files/Pods-Weather_Impact-Weather_ImpactTests/Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82C8EB2F9AA3DA5DE1AA6886 /* libPods-Weather_Impact-Weather_ImpactTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather_Impact-Weather_ImpactTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF71A4F2C479457EA197C0C3 /* LEMONMILK-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LEMONMILK-MediumItalic.otf"; path = "../src/assets/fonts/LEMONMILK-MediumItalic.otf"; sourceTree = "<group>"; };
+		CA4B60109F9745BE926FD14A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		DD96E684AD364EAD8998F419 /* LEMONMILK-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LEMONMILK-Light.otf"; path = "../src/assets/fonts/LEMONMILK-Light.otf"; sourceTree = "<group>"; };
+		E24B9EDCBCEE45308C2A23E5 /* LEMONMILK-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LEMONMILK-Regular.otf"; path = "../src/assets/fonts/LEMONMILK-Regular.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE973AA56ADC4B28B3A8EC61 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F6164106C2004A91A900EC88 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F6C24A9E06206C48EB0795A4 /* libPods-Weather_Impact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather_Impact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F974DB47EC4842F55D70B753 /* Pods-Weather_Impact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather_Impact.release.xcconfig"; path = "Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2661DD20FC59C17A0D8C376 /* libPods-Weather_Impact-Weather_ImpactTests.a in Frameworks */,
+				8C066ABE5C8E6E4952DD7AA0 /* libPods-Weather_Impact-Weather_ImpactTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C429091E31A3A4138F7225 /* libPods-Weather_Impact.a in Frameworks */,
+				8C2FA07B4C4654C2620F2940 /* libPods-Weather_Impact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		103F109CDEC0497488553F33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD96E684AD364EAD8998F419 /* LEMONMILK-Light.otf */,
+				AF71A4F2C479457EA197C0C3 /* LEMONMILK-MediumItalic.otf */,
+				E24B9EDCBCEE45308C2A23E5 /* LEMONMILK-Regular.otf */,
+				F6164106C2004A91A900EC88 /* Roboto-BlackItalic.ttf */,
+				CA4B60109F9745BE926FD14A /* Roboto-Bold.ttf */,
+				EE973AA56ADC4B28B3A8EC61 /* Roboto-Light.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* Weather_Impact */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4C8DF39CD6723973CDD6FD92 /* libPods-Weather_Impact.a */,
-				15214DB537D94BEE612AAE30 /* libPods-Weather_Impact-Weather_ImpactTests.a */,
+				F6C24A9E06206C48EB0795A4 /* libPods-Weather_Impact.a */,
+				82C8EB2F9AA3DA5DE1AA6886 /* libPods-Weather_Impact-Weather_ImpactTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				103F109CDEC0497488553F33 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,10 +167,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CB7A40D7417E22E5768A989F /* Pods-Weather_Impact.debug.xcconfig */,
-				C147E376CC04CE635B6BF326 /* Pods-Weather_Impact.release.xcconfig */,
-				D3E9E5CE6DBF4C78B022BD15 /* Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig */,
-				887A36C1F00FDA1D4D2EBFFD /* Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig */,
+				7CF088B708ACF369E5CEC050 /* Pods-Weather_Impact.debug.xcconfig */,
+				F974DB47EC4842F55D70B753 /* Pods-Weather_Impact.release.xcconfig */,
+				41E0097A5EE4D92958CF898F /* Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig */,
+				7A9BA16F403E76AB88A2EAC7 /* Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Weather_ImpactTests" */;
 			buildPhases = (
-				E8D8122D71BD615CD8814D46 /* [CP] Check Pods Manifest.lock */,
+				CE005A35ED9254FD52E3E20E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				A61C58649216E4D0350CEFF9 /* [CP] Embed Pods Frameworks */,
-				48EAA4359445C57E71A62443 /* [CP] Copy Pods Resources */,
+				B97E1ACB80AEEBD736960DA8 /* [CP] Embed Pods Frameworks */,
+				725C119EBDBEE0B82CDB5CF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +203,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Weather_Impact" */;
 			buildPhases = (
-				01A60C258C5FA881B8A65628 /* [CP] Check Pods Manifest.lock */,
+				E768926BD3CBEB999864AC82 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				4B14856887D84BDB3F6BE986 /* [CP] Embed Pods Frameworks */,
-				3BE689FF79B2DAA20AA0E1C5 /* [CP] Copy Pods Resources */,
+				C126A2B40F00E26B27ADAE37 /* [CP] Embed Pods Frameworks */,
+				D324C1FD104C503714109829 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +271,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0127027E6FD14F41801877EF /* LEMONMILK-Light.otf in Resources */,
+				E8701FCC4F33469FA91052D3 /* LEMONMILK-MediumItalic.otf in Resources */,
+				AF5DDCA3ED5A444BBB29EE31 /* LEMONMILK-Regular.otf in Resources */,
+				43EE1FB6E0214637A9010C06 /* Roboto-BlackItalic.ttf in Resources */,
+				F908C2F23976492B8BC3C113 /* Roboto-Bold.ttf in Resources */,
+				9EEF8FF7F27D435891B730A5 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,46 +299,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		01A60C258C5FA881B8A65628 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Weather_Impact-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BE689FF79B2DAA20AA0E1C5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		48EAA4359445C57E71A62443 /* [CP] Copy Pods Resources */ = {
+		725C119EBDBEE0B82CDB5CF4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,24 +316,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact-Weather_ImpactTests/Pods-Weather_Impact-Weather_ImpactTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B14856887D84BDB3F6BE986 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A61C58649216E4D0350CEFF9 /* [CP] Embed Pods Frameworks */ = {
+		B97E1ACB80AEEBD736960DA8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,7 +333,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact-Weather_ImpactTests/Pods-Weather_Impact-Weather_ImpactTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E8D8122D71BD615CD8814D46 /* [CP] Check Pods Manifest.lock */ = {
+		C126A2B40F00E26B27ADAE37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE005A35ED9254FD52E3E20E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,6 +366,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Weather_Impact-Weather_ImpactTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D324C1FD104C503714109829 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather_Impact/Pods-Weather_Impact-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E768926BD3CBEB999864AC82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather_Impact-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -430,7 +463,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3E9E5CE6DBF4C78B022BD15 /* Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig */;
+			baseConfigurationReference = 41E0097A5EE4D92958CF898F /* Pods-Weather_Impact-Weather_ImpactTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +490,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 887A36C1F00FDA1D4D2EBFFD /* Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig */;
+			baseConfigurationReference = 7A9BA16F403E76AB88A2EAC7 /* Pods-Weather_Impact-Weather_ImpactTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +514,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB7A40D7417E22E5768A989F /* Pods-Weather_Impact.debug.xcconfig */;
+			baseConfigurationReference = 7CF088B708ACF369E5CEC050 /* Pods-Weather_Impact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -508,7 +541,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C147E376CC04CE635B6BF326 /* Pods-Weather_Impact.release.xcconfig */;
+			baseConfigurationReference = F974DB47EC4842F55D70B753 /* Pods-Weather_Impact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
